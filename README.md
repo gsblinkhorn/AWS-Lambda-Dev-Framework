@@ -8,7 +8,7 @@ Creates a virtualenv in the present working directory, installs any specified py
 #### Flags
 Both flags are optional.
 
--v : the name of the virtualenv to be created (defaults to '.venv-default' if option not specified)
+-v : the name of the virtualenv to be created (defaults to '.venv-default' if flag not specified)
 
 -p : a list of comma-separated values specifying the desired python packages to install in the virtualenv
 
