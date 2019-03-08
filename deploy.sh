@@ -1,5 +1,5 @@
 #!/bin/bash
-target="./packages"
+lib="./packages"
 zipFile="deploy-package.zip"
 
 while getopts ":p:l:" opt; do
@@ -20,8 +20,8 @@ done
 
 source .venv*/bin/activate
 
-pip3 install -r ./requirements.txt --target $target
-cd $target && zip -r9 ../${zipFile} . && cd ..
+pip3 install -r ./requirements.txt --target $lib
+cd $lib && zip -r9 ../${zipFile} . && cd ..
 zip -g ${zipFile} ${pyFile}
 
 echo "Deploying updated zip file to AWS Lambda ..."
