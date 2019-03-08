@@ -36,6 +36,6 @@ This script assumes that you have already configured the awscli for your AWS acc
 -p : the name of your python file containing your lambda handler
 
 #### Example Execution
-This command packages any dependencies specified in the requirements.txt folder, adds 'YourPythonFile.py' to the package, and deploys that package to 'TheNameOfTheLambdaFunction' Lambda function in AWS.
+This command packages any dependencies specified in the requirements.txt folder, adds 'lambda_function.py' to the package, and deploys that package to 'TheNameOfTheLambdaFunction' Lambda function in AWS.
 
-`bash deploy.sh -l TheNameOfTheLambdaFunction -p YourPythonFile.py`
+`bash deploy.sh -l TheNameOfTheLambdaFunction -p lambda_function.py`
