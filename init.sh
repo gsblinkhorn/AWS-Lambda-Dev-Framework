@@ -18,11 +18,10 @@ while getopts ":p:v:" opt; do
 done
 
 # Create Virtualenv
-virtualenv $venvName
+python3 -m venv $venvName
 source $venvName/bin/activate
 
 # Install packages
-
 for i in "${array[@]}"; do
     yes | pip3 install ${i}
 done
