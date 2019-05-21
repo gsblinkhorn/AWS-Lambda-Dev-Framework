@@ -1,6 +1,6 @@
 # AWS-Lambda-Dev-Framework
 
-I created this framework to facilitate the development of AWS Lambda Functions (Python 3.6) which require third-party dependencies to function. It contains two scripts for initializing the workspace and conveniently deploying your function code to AWS Lambda. It also contains an empty Lambda function template.
+I created this framework to facilitate the development of AWS Lambda Functions (Python 3) which require third-party dependencies to function. It contains two scripts for initializing the workspace and conveniently deploying your function code to AWS Lambda. It also contains an empty Lambda function template.
 
 ## init.sh
 Creates a virtualenv in the present working directory, installs any specified python packages and freezes these dependencies to a requirements.txt file.
